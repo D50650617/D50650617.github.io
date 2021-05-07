@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<meta charset="utf-8"></meta>
+	
+	<audio controls="controls" loop="loop">
+ 
+  <source src="BGM.mp3" type="audio/mpeg" /></audio>
+	<title>自我介紹</title>
+	<style type="text/css">
+	a {
+    color:red;
+}
+	.head{
+		background-color:#003344;color:white;font-weight:bold;font-size:30px;
+		text-align:center;padding:10px;
+	}
+	.content{
+		width:1000px;margin-left:auto;margin-right:auto;
+	}
+	.box{
+		width:280px;padding:10px;margin:10px;background-color:white;
+		display:inline-block;vertical-align:top;
+		text-align:center;height:150px;line-height:30px;
+	}
+	.title{font-weight:bold}
+	
+	</style>
+
+</head>
+<body style="margin:0px;background-color:#eeeeee;">
+	
+	
+	<div	class="head">丁啟恩的網頁</div>
+	<div    class="content">
+		<div class="box">
+			<div class="title">我的基本資料</div>
+			<div>我是男生</div>
+			<div>今年22歲</div>
+			<div>就讀會計系</div>
+			<div>沒什麼夢想</div>
+		</div>
+		<div class="box">
+			<div class="title">我的個人興趣</div>
+			<div><a href=https://www.facebook.com/NTUOSC/>開源社</a>寫專案</div>
+			<div>打<a href=https://www.facebook.com/ntuvolleyball/>排球</a></div>
+			<div>下<a href=https://zh.wikipedia.org/wiki/%E4%BA%91%E9%A1%B6%E4%B9%8B%E5%BC%88>戰棋</a></div>
+		</div>
+		<div class="box">
+			<div class="title">與我聯絡</div>
+			<div>09XXXXXXX</div>
+			<div>b08702039@ntu.edu.tw</div>
+			<div>d50650617@gmail.com</div>
+			
+		</div>
+	</div>
+	<h3>Chi-En ,Ding</h3>
+	<img src="沒素材阿哥.jpg" width="200" height="220" ></img>
+	<hr/>
+	
+
+	<body onload="ShowTime()">
+	<h3>個人資料</h3>
+	<table border="1" width="400" cellpadding="5">
+		<tr>
+			<td><b>高中</b></td>
+			<td>科系</td>
+			
+		</tr>
+		<tr>
+			<td><a href=https://www.tnfsh.tn.edu.tw/>臺南一中</td>
+			<td><a href="https://management.ntu.edu.tw/Acc">臺大會計系</td>
+			
+		</tr>		
+	</table>  
+	
+<span id="mytime"></span>
+	<script>
+		function showTime0(){
+			nowtime = new Date();//
+			year = nowtime.getFullYear();
+			month = nowtime.getMonth()+1;
+			date = nowtime.getDate();
+			document.getElementById("mytime").innerText = month+"-"+date+"-"+year+" "+nowtime.toTimeString();
+		}
+		function showTime1(){
+			document.getElementById("mytime").innerText = new Date();
+		}
+		setInterval('showTime0()',1000);
+	</script>
+	
+
+
+
+</body>
+</html>
+
+
